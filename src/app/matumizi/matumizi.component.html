@@ -1,0 +1,26 @@
+<div class="mt-3">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th>Count</th>
+                <th>InStock</th>
+                <th>Type</th>
+                <th>UnitPrice</th>
+                <th>TotalPrice</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let matumizi of matumiziData ">
+                <td>{{matumizi.itemName}}</td>
+                <td>{{matumizi.count}}</td>
+                <td>{{matumizi.inStock}}</td>
+                <td>{{matumizi.type}}</td>
+                <td>{{matumizi.unitPrice}}</td>
+                <td>{{matumizi.count*matumizi.unitPrice}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

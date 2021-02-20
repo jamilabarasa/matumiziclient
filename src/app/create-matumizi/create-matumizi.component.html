@@ -1,0 +1,43 @@
+<div class="container">
+    <form (ngSubmit)="submitMatumizi()" [formGroup]="matumiziData" class="mt-5 col-md-6">
+      <div class="form-group">
+        <label>Name</label>
+        <input formControlName="itemName" type="text" class="form-control">
+      </div>
+  
+      <div class="form-group">
+        <label>Count</label>
+        <input formControlName="count" type="number" class="form-control">
+      </div>
+  
+      <div class="form-group">
+        <label>Unit Price</label>
+        <input formControlName="unitPrice" type="number" class="form-control">
+      </div>
+  
+      <div class="form-group">
+        <label>Reason</label>
+        <input formControlName="reason" type="text" class="form-control">
+      </div>
+  
+      <div class="form-group">
+        <label>Type</label>
+        <select formControlName="type" class="form-control" aria-label="Default select example">
+          <option selected value="RENEWABLE">RENEWABLE</option>
+          <option value="NONRENEWABLE">NONRENEWABLE</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label>Unit</label>
+        <select formControlName="unit" class="form-control" aria-label="Default select example">
+          <option selected value="KG">KG</option>
+          <option value="UNDEFINED">UNDEFINED</option>
+          <option value="GB">GB</option>
+        </select>
+      </div>
+  
+      <button class="btn btn-primary float-left mt-3" type="reset">Reset</button>
+      <button class="btn btn-primary float-right mt-3" type="submit">Save Matumizi</button>
+    </form>
+  </div>
